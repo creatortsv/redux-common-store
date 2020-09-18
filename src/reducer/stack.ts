@@ -3,7 +3,7 @@
  * @readonly
  */
 export interface Identifired<T> {
-  readonly [identifier: string]: T,
+  readonly [identifier: string]: T;
 }
 
 /**
@@ -11,12 +11,12 @@ export interface Identifired<T> {
  * @readonly
  */
 export interface WithIdentifired<T> {
-  readonly data: Identifired<T>,
+  readonly data: Identifired<T>;
 }
 
 /**
  * The redux normalized list of identifiers
  */
 export interface WithAllIdentifiers {
-  readonly identifiers: string[],
+  readonly identifiers: string[];
 }
